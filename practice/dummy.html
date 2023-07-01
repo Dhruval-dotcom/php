@@ -1,0 +1,159 @@
+<div class="tab-content" id="nav-tabContent">
+
+    <!--1) Length and distance-->
+    <div class="tab-pane fade show active" id="nav-panel1" role="tabpanel" aria-labelledby="nav-panel1-tab">
+        <form id="insert" class="mx-auto col-10 col-md-8 col-lg-6 mt-3">
+            <h1>Length and distance</h1>
+
+            <div class="input-group mb-3">
+                <label class="form-check-label me-3">From </label>
+                <input id="distancefrom" oninput="conversion(1,'distance')" type="number"
+                    class="form-control" placeholder="Enter Value" aria-label="Username">
+                <select id="distancefromunit" onchange="conversion(1,'distance')" name="distancefromunit"
+                    class="form-select form-select-sm" aria-label=".form-select-sm example">
+                </select>
+            </div>
+            <button onclick="swap('distance')" class="buttonswap"><img class="imageswap" src="css/swap.png"></button>
+            <div class="input-group mb-3">
+                <label class="form-check-label me-4">To &nbsp;&nbsp;</label>
+                <input id="distanceto" oninput="conversion(2,'distance')"  type="number"
+                    class="form-control" placeholder="Enter Value" aria-label="Username">
+                <select id="distancetounit" onchange="conversion(2  ,'distance')" name="distancetounit"
+                    class="form-select form-select-sm" aria-label=".form-select-sm example">
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <!--2) Area-->
+    <div class="tab-pane fade" id="nav-panel2" role="tabpanel" aria-labelledby="nav-panel2-tab">
+        <form id="insert" class="mx-auto col-10 col-md-8 col-lg-6 mt-3">
+            <h1>Area</h1>
+
+            <div class="input-group mb-3">
+                <label class="form-check-label me-3 ">From </label>
+                <input id="areafrom" oninput="conversion(1,'area')" type="number" class="form-control"
+                    placeholder="Enter Value" aria-label="Username">
+                <select id="areafromunit" onchange="conversion(1,'area')" class="form-select form-select-sm"
+                    aria-label=".form-select-sm example">
+                </select>
+            </div>
+            <button onclick="swap('area')" class="buttonswap"><img class="imageswap" src="css/swap.png"></button>
+            <div class="input-group mb-3">
+                <label class="form-check-label me-4">To &nbsp;&nbsp;</label>
+                <input id="areato" oninput="conversion(2,'area')" type="number" class="form-control"
+                    placeholder="Enter Value" aria-label="Username">
+                <select id="areatounit" onchange="conversion(2,'area')" class="form-select form-select-sm"
+                    aria-label=".form-select-sm example">
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <!--3) Volume and Capacity-->
+    <div class="tab-pane fade" id="nav-panel3" role="tabpanel" aria-labelledby="nav-panel3-tab">
+        <form id="insert" class="mx-auto col-10 col-md-8 col-lg-6 mt-3">
+            <h1>Volume and capacity</h1>
+
+            <div class="input-group mb-3">
+                <label class="form-check-label me-3 ">From </label>
+                <input id="volumefrom" oninput="conversion(1,'volume')" type="number" class="form-control"
+                    placeholder="Enter Value" aria-label="Username">
+                <select id="volumefromunit" onchange="conversion(1,'volume')" class="form-select form-select-sm"
+                    aria-label=".form-select-sm example">
+                </select>
+            </div>
+            <button onclick="swap('volume')" class="buttonswap"><img class="imageswap" src="css/swap.png"></button>
+            <div class="input-group mb-3">
+                <label class="form-check-label me-4">To &nbsp;&nbsp;</label>
+                <input id="volumeto" oninput="conversion(2,'volume')" type="number" class="form-control"
+                    placeholder="Enter Value" aria-label="Username">
+                <select id="volumetounit" onchange="conversion(2,'volume')" class="form-select form-select-sm"
+                    aria-label=".form-select-sm example">
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <!--4) Mass And Weight-->
+    <div class="tab-pane fade" id="nav-panel4" role="tabpanel" aria-labelledby="nav-panel4-tab">
+        <form id="insert" class="mx-auto col-10 col-md-8 col-lg-6 mt-3">
+            <h1>Mass and Weight</h1>
+
+            <div class="input-group mb-3">
+                <label class="form-check-label me-3 ">From </label>
+                <input id="massfrom" oninput="conversion(1,'mass')" type="number" class="form-control"
+                    placeholder="Enter Value" aria-label="Username">
+                <select id="massfromunit" onchange="conversion(1,'mass')" class="form-select form-select-sm"
+                    aria-label=".form-select-sm example">
+                </select>
+            </div>
+            <button onclick="swap('mass')" class="buttonswap"><img class="imageswap" src="css/swap.png"></button>
+            <div class="input-group mb-3">
+                <label class="form-check-label me-4">To &nbsp;&nbsp;</label>
+                <input id="massto" oninput="conversion(2,'mass')" type="number" class="form-control"
+                    placeholder="Enter Value" aria-label="Username">
+                <select id="masstounit" onchange="conversion(2,'mass')" class="form-select form-select-sm"
+                    aria-label=".form-select-sm example">
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <!--5) Speed-->
+    <div class="tab-pane fade" id="nav-panel5" role="tabpanel" aria-labelledby="nav-panel5-tab">
+        <form id="insert" class="mx-auto col-10 col-md-8 col-lg-6 mt-3">
+            <h1>Speed</h1>
+
+            <div class="input-group mb-3">
+                <label class="form-check-label me-3 ">From </label>
+                <input id="speedfrom" oninput="conversion(1,'speed')" type="number" class="form-control"
+                    placeholder="Enter Value" aria-label="Username">
+                <select id="speedfromunit" onchange="conversion(1,'speed')" class="form-select form-select-sm"
+                    aria-label=".form-select-sm example">
+                </select>
+            </div>
+            <button onclick="swap('speed')" class="buttonswap"><img class="imageswap" src="css/swap.png"></button>
+            <div class="input-group mb-3">
+                <label class="form-check-label me-4">To &nbsp;&nbsp;</label>
+                <input id="speedto" oninput="conversion(2,'speed')" type="number" class="form-control"
+                    placeholder="Enter Value" aria-label="Username">
+                <select id="speedtounit" onchange="conversion(2,'speed')" class="form-select form-select-sm"
+                    aria-label=".form-select-sm example">
+                    <option value="m">mater</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <!--6) Temperature-->
+    <div class="tab-pane fade" id="nav-panel6" role="tabpanel" aria-labelledby="nav-panel6-tab">
+        <form id="insert" class="mx-auto col-10 col-md-8 col-lg-6 mt-3">
+            <h1 class="mx-auto">Temperature</h1>
+
+            <div class="input-group mb-3">
+                <label class="form-check-label me-3 ">From </label>
+                <input id="tempfrom" oninput="conversion(1,'temp')" type="number" class="form-control"
+                    placeholder="Enter Value" aria-label="Username">
+                <select id="tempfromunit" onchange="conversion(1,'temp')" class="form-select form-select-sm"
+                    aria-label=".form-select-sm example">
+                </select>
+            </div>
+            <button onclick="swap('temp')" class="buttonswap"><img class="imageswap" src="css/swap.png"></button>
+            <div class="input-group mb-3">
+                <label class="form-check-label me-4">To &nbsp;&nbsp;</label>
+                <input id="tempto" oninput="conversion(2,'temp')" type="number" class="form-control"
+                    placeholder="Enter Value" aria-label="Username">
+                <select id="temptounit" onchange="conversion(2,'temp')" class="form-select form-select-sm"
+                    aria-label=".form-select-sm example">
+                </select>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+</script>

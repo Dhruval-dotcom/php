@@ -1,0 +1,43 @@
+.msg-img{
+    width: 28px;
+}
+.send{
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+}
+.message-rcvr{
+    background-color: #e9ecef;
+    border-radius: 12px 12px 12px 0px;
+    padding: 4px 9px;
+    max-width: 400px;
+    font-size: 17px;
+    border: 1px solid #ced4da;
+}
+.message-sndr{
+    border:1px solid #ced4da;
+    border-radius: 12px 12px 12px 0px;
+    padding: 4px 9px;
+    max-width: 400px;
+    font-size: 17px;
+    border: 1px solid #ced4da;
+}
+.msges{
+    position: absolute;
+}
+.avtar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 0%;
+}
+.sender{
+    display: flex;
+}
+.time{
+    color: rgb(97, 97, 241);
+    font-size: 15px;
+    float: right;
+}

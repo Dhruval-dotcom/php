@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<students status = "ok">
+    <stud no="111">
+        <name>Joe paul</name>
+        <dept>comp</dept>
+    </stud>
+    <stud no="222">
+        <name>Sean O' pry</name>
+        <dept>It</dept>
+    </stud>
+    <stud no="333">
+        <name>Harry smith</name>
+        <dept>Chemical</dept>
+    </stud>
+</students>
